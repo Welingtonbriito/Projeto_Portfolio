@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header>
+          <nav class="container">
+              <div class="logo"> WB </div>
+              <ul class="nav-links">
+                  <li> <a href="#sobre"> Sobre </a> </li>
+                  <li> <a href="#skills"> Skills </a> </li>
+                  <li> <a href="#projetos"> Projetos </a> </li>
+                  <li> <a href="#contato"> Contato </a> </li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <section id="sobre" class="dev container fade-in">
+              <div class="dev-texto">
+                  <h1> Welington Brito </h1>
+                  <p> Eu sou um desenvolvedor full-stack apaixonado, especialista em criar aplicações web bonitas e funcionais.</p>
+                  <a class="botao-de-contato" href="#contato"> Entre em contato </a>
+              </div>
+              <div class="dev-imagem">
+                  <img src="./dude.png" class="imagem-perfil">
+              </div>              
+          </section>
+
+          <section id="skills" class="container fade-in">
+              <h2> Skills </h2>
+              <div class="skills-grid">
+                  <div class="skills-item">
+                      <div class="skill-icon">&#128187;</div>
+                      <h3> Frontend </h3>
+                      <p>HTML, CSS, Javascript, React</p>
+                  </div>
+                  <div class="skills-item">
+                        <div class="skill-icon">&#128295;</div>
+                        <h3> Backend</h3>
+                        <p>Node.js, Express, Python</p>
+                    </div>
+                    <div class="skills-item">
+                            <div class="skill-icon">&#128202;</div>
+                            <h3> Banco de dados</h3>
+                            <p>MongoDB, PostgreSQL</p>
+                    </div>
+                    <div class="skills-item">
+                            <div class="skill-icon">&#128736;</div>
+                            <h3> Ferramentas </h3>
+                            <p>Git, Docker, AWS</p>
+                    </div>
+              </div>
+          </section>
+
+          <section id="projetos" class="container fade-in" >
+              <h2> Projetos </h2>
+              <div class="projetos-grid">
+                  <div class="projeto-card">
+                      <h3 class="titulo-projeto"> Site de ecommerce</h3>
+                      <p> Plataforma de comércio eletrônico totalmente responsiva com autenticação de usuário e funcionalidade de pagamento </p>
+                      <div class="projeto-tags">
+                          <span> React </span>
+                          <span> Node.js </span>
+                          <span> MongoDB </span>
+                      </div>
+                  </div>
+                  <div class="projeto-card">
+                        <h3 class="titulo-projeto"> App de Gerenciamento de Tarefas </h3>
+                        <p> Uma aplicação de produtividade para gerenciar tarefas e projetos com atualizações em tempo real e recursos de colaboração de equipes </p>
+                        <div class="projeto-tags">
+                            <span> React </span>
+                            <span> Firebase </span>
+                            <span> Material UI </span>
+                        </div>
+                    </div>
+                    <div class="projeto-card">
+                            <h3 class="titulo-projeto"> Dashboard clima </h3>
+                            <p> Aplicação de tempo interativo que exibe dados meteorológicos atuais e previstos usando um API </p>
+                            <div class="projeto-tags">
+                                <span> Javascript </span>
+                                <span> API </span>
+                                <span> Chart.js </span>
+                            </div>
+                    </div>
+              </div>
+          </section>
+
+          <section id="contato" class="contato fade-in">
+              <h2 class="titulo-contato"> Contate-me! </h2>
+              <form class="contato-form">
+                  <div class="grupo-formulario">
+                      <label for="nome"> Nome </label>
+                      <input id="nome" name="nome" required>
+                  </div>
+                  <div class="grupo-formulario">
+                      <label for="email"> Email </label>
+                      <input id="email" name="email" required>
+                  </div>
+                  <div class="grupo-formulario">
+                      <label for="mensagem"> Mensagem</label>
+                      <textarea id="mensagem" name="mensagem" required></textarea>
+                  </div>
+                  <button type="submit"> Mandar mensagem </button>
+              </form>
+          </section>
+
+          <footer>
+              <ul class="icones-footer">
+                  <li>&#128187;</li>
+                  <li>&#128101;</li>
+                  <li>&#128038;</li>
+              </ul>
+              <p>&copy; 2024 Welington Brito. Todos os direitos reservados </p>
+          </footer>
+      </main>
+  </body>
+</html>

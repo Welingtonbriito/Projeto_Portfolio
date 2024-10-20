@@ -1,0 +1,256 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #f0f4f8;
+    --cor-de-texto: #1a202c;
+    --cor-primaria: #4299e1;
+    --cor-auxiliar: #ed8936;
+    --cor-segundaria: #2b6cb0;
+    --cor-de-fundo-card: #ffffff;
+    --fonte: "Inter", Arial, sans-serif;
+    --transicao: all 0.3s ease;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--cor-segundaria);
+}
+
+header {
+    background-color: var(--cor-de-fundo-card);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--cor-de-texto);
+    text-decoration: none;
+    transition: var(--transicao);
+}
+
+.nav-links a:hover {
+    color: var(--cor-primaria);
+}
+
+main {
+    margin-top: 5rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dev-texto h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.dev-texto p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+}
+
+.botao-de-contato {
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: var(--transicao);
+}
+
+.botao-de-contato:hover {
+    background-color: var(--cor-segundaria);
+}
+
+.dev-imagem {
+    position: relative;
+}
+
+.imagem-perfil {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.skills-item {
+    background-color: var(--cor-de-fundo-card);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align-last: center;
+    border-radius: 10px;
+    transition: var(--transicao);
+}
+
+.skills-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    background-color: var(--cor-de-fundo-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: var(--transicao);
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+.titulo-projeto {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--cor-segundaria);
+}
+
+.projeto-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projeto-tags span {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#projetos, #skills {
+    margin: 100px 0;
+}
+
+.contato {
+    background-color: var(--cor-segundaria);
+    color: white;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input, textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+}
+
+button {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.titulo-contato {
+    color: white;
+}
+
+footer {
+    background-color: var(--cor-de-fundo-card);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.icones-footer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fade 1s ease-out;
+}
